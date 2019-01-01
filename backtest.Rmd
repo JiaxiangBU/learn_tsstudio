@@ -1,0 +1,14 @@
+---
+output: github_document
+---
+
+```{r eval=F}
+USgas_backtesting <- ts_backtesting(USgas, 
+                                    models = "abehntw", 
+                                    periods = 6, 
+                                    error = "RMSE", 
+                                    window_size = 12, 
+                                    h = 12)
+```
+
+可以快速比较模型，但是训练时间也比较长。
